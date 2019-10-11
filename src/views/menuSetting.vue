@@ -122,6 +122,7 @@
     },
     created() {
       this.getDataList()
+      this.$store.state.showHeader = true
     }
   }
 </script>

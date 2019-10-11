@@ -137,6 +137,9 @@
         this.showUploadBox = true
         this.uploadLoading = false
       },
+    },
+    created() {
+      this.$store.state.showHeader = true
     }
   }
 </script>

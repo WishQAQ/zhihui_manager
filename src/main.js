@@ -36,8 +36,7 @@ error=>{
     switch(errorMessage.status){
       case 400:
         router.replace({
-          path:'/login',
-          query:{redirect:router.currentRoute.fullPath}
+          path:'/login'
         })
     }
   return Promise.reject(err.response.data)//返回接口返回的错误信息。

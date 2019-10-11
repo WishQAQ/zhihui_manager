@@ -2,7 +2,7 @@
   <div class="Header">
     <div class="logo">智慧销售系统</div>
     <div class="user_info">
-      <div class="user_name">{{userInfo.userName}}</div>
+      <div class="user_name">{{userInfo.userName || '暂无数据'}}</div>
       <el-dropdown trigger="click" @command="handleCommand">
         <div class="el-dropdown-link">
           <div class="login_out"><i class="el-icon-more-outline"></i></div>
@@ -79,7 +79,6 @@
               .then(res =>{
                 if(res.status === 200){
                   this.$message.success('退出成功')
-                  sessionStorage.clear();
                   localStorage.clear();
                   this.$router.push('/login')
                 }else {

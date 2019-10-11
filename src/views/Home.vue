@@ -53,7 +53,7 @@
               <el-button size="mini">操作</el-button>
             </div>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item><div @click="infoBtn(scope.row)">详细信息</div></el-dropdown-item>
+<!--              <el-dropdown-item><div @click="infoBtn(scope.row)">详细信息</div></el-dropdown-item>-->
               <el-dropdown-item><div @click="editBtn(scope.row)">编辑</div></el-dropdown-item>
               <el-dropdown-item><div @click="deleteBtn(scope.row)">删除</div></el-dropdown-item>
             </el-dropdown-menu>
