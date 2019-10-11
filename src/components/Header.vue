@@ -48,7 +48,7 @@
     name: "Header",
     data(){
       return {
-        userInfo: JSON.parse(localStorage.getItem('userInfo')),
+        userInfo: JSON.parse(localStorage.getItem('userInfo')) || {},
         userInfoDialog: false,  // 用户信息弹窗
       }
     },

@@ -24,8 +24,8 @@
       return {
         loading: false,
 
-        counter: 'admin',
-        password: '123456'
+        counter: '',
+        password: ''
       }
     },
     methods:{

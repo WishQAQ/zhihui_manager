@@ -33,12 +33,11 @@ axios.interceptors.response.use(
     },
 error=>{
   let errorMessage = JSON.parse(JSON.stringify(error.response))
-    switch(errorMessage.status){
-      case 400:
-        router.replace({
-          path:'/login'
-        })
-    }
+
+  router.replace({
+    path:'/login'
+  })
+
   return Promise.reject(err.response.data)//返回接口返回的错误信息。
 })
 
