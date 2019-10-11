@@ -368,8 +368,12 @@ export default {
     }
   },
   created() {
-    this.getDataList()
-    this.$store.state.showHeader = true
+    if(!localStorage.token){
+      this.$router.push('/login')
+    }else {
+      this.getDataList()
+      this.$store.state.showHeader = true
+    }
   }
 }
 </script>

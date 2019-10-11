@@ -40,6 +40,7 @@
                 if(res.status === 200){
                   this.$message.success('登录成功')
                   window.localStorage["token"] = res.data.date.token
+                  window.localStorage["path"] = '/'
                   localStorage.setItem('userInfo', JSON.stringify(res.data.date.userDto));
                   setTimeout(() =>{
                     this.$router.push('/')
